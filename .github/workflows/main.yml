@@ -16,6 +16,6 @@ jobs:
       - name: Install    Newman
         run: npm install -g newman
       - name: Run Postman Tests
-        run: newman run korapay_postman_collection.json -e korapay_postman_environment.json junit --report-html-export TestResult.html --report-junit-export TestResult.xml
-      - name: print Report
-        run: echo Success --guess -f json -o TestResult.json
+        run: newman run korapay_postman_collection.json -e korapay_postman_environment.json junit #--report-html-export TestResult.html --report-junit-export TestResult.xml
+      # - name: print Report
+      #   run: echo Success --guess -f json -o TestResult.json
